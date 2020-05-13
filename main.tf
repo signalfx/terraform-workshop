@@ -3,7 +3,8 @@ variable "signalfx_key" {
 }
 
 provider "signalfx" {
-	auth_token = var.signalfx_key
+  auth_token = var.signalfx_key
+  # api_url = "https://api.us0.signalfx.com"
 }
 
 # resource "signalfx_time_chart" "mychart0" {
